@@ -3,7 +3,6 @@
   "version": "0.0.2",
   "description": "",
   "scripts": {
-    "rollup": "rollup -c 'rollup.config.js' -w",
     "deploy": "yarn clean && yarn lint && yarn run test && yarn run rollup -c 'rollup.config.js' -w && npm publish",
     "test": "jest",
     "sb": "start-storybook -p 6006",
