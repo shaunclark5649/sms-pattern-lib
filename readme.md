@@ -184,22 +184,21 @@ const NewButton = styled(Button)(`
 `);
 ```
 
-⚠️ -- To extend components using this method your base component must accept className as a prop ⚠️
+⚠️ -- To extend components using this method your base component must accept className as a prop -- ⚠️
 
 It is also possible to add dynamic values to your styles.
 
 ```javascript
-
 import styled from 'styled-components';
 
-export const StyledButton = styled.button<{ someValue: string }>`
+import { ButtonProps } from './Button';
+
+export const StyledButton = styled.button<ButtonProps>`
   display: ${({ someValue }) => someValue};
 `;
-
 ```
 
 More info can be found [here](https://styled-components.com/)
-
 
 ### Formatting
 

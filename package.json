@@ -10,7 +10,7 @@
     "storybook-docs": "start-storybook --docs --no-manager-cache",
     "lint": "eslint . --ext ts,tsx",
     "lint:fix": "eslint --fix . --ext ts,tsx",
-    "format": "prettier --write './src/**/**/**.{js,jsx,ts,tsx,md}' --config ./.prettierrc",
+    "format": "prettier --write './src/**/**/**.{js,jsx,ts,tsx}' --config ./.prettierrc",
     "prepare": "husky install",
     "dev-reinstall": "rimraf node_modules yarn.lock package.lock storybook-static && yarn",
     "clean": "rimraf dist"

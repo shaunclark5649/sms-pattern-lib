@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const StyledButton = styled.button`
-  display: flex;
+export const StyledButton = styled.button<{ someValue: string }>`
+  display: ${({ someValue }) => someValue};
 `;

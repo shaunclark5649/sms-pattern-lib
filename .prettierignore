@@ -1,0 +1,14 @@
+dist
+.git
+.github
+.husky
+node_modules
+storybook-static
+
+*.md
+*.json
+eslint.rc
+.prettierignore
+.prettierrc
+babel.config.js
+jest.config.js
