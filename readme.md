@@ -173,17 +173,6 @@ const NewButton = styled(Button)(`
 `);
 ```
 
-You can also use dynamic values for styling:
-
-```javascript
-import styled from 'styled-components';
-import Button from './Button';
-
-const NewButton = styled(Button)(`
-	background: red;
-`);
-```
-
 ⚠️ -- To extend components using this method your base component must accept className as a prop -- ⚠️
 
 It is also possible to add dynamic values to your styles.
