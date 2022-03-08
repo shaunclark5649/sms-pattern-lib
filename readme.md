@@ -188,7 +188,7 @@ const NewButton = styled(Button)(`
 
 It is also possible to add dynamic values to your styles.
 
-```
+```javascript
 
 import styled from 'styled-components';
 
