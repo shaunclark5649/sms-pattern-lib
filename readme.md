@@ -166,11 +166,14 @@ You can also extend base components with styled:
 
 ```javascript
 import styled from 'styled-components';
+import Button from './Button';
 
-const button = styled(Button)(`
+const NewButton = styled(Button)(`
 	background: red;
 `);
 ```
+
+⚠️ -- To extend components using this method your base component must accept className as a prop ⚠️
 
 ### Formatting
 
