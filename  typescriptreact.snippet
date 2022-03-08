@@ -1,0 +1,59 @@
+{​​​​​​​​
+  "Create story": {
+    "prefix": "story",
+    "body": [
+      "import { Meta, Story } from '@storybook/react';",
+      "",
+      "import { ${1:component} as ${1:component}Component, ${1:component}Props } from './${1:component}';",
+      "",
+      "export default {",
+      "\ttitle: '${2}/${1:component}',",
+      "\tcomponent: ${1:component}Component,",
+      "\targTypes: {${5}},",
+      "} as Meta;",
+      "",
+      "const Template: Story<${1:component}Props> = ({ ${3} }: ${1:component}Props) => (<${1:component}Component ${4} />\n);",
+      "export const ${1:component} = Template.bind({});",
+    ],
+    "description": "Creates the boiler-plate for a component story."
+  },
+  "Create Component ": {
+    "prefix": "com",
+    "body": [
+      "import { ${5:string} } from 'prop-types';",
+      "",
+      "export interface ${1:Component}Props {",
+      "\t${2:foo: string;\n\tbar: string;}",
+      "}",
+      "",
+      "/**",
+      " * ${1:Component} Component",
+      " */",
+      "export const ${1:Component} = ({ ${3:foo, bar} }: ${1:component}Props) => (",
+      "$6",
+      ");",
+      "",
+      "${1:Component}.propTypes = { ",
+      "\t${4:foo: string,\n\tbar: string,}",
+      "};"
+    ],
+    "description": "Creates the boiler-plate for a component."
+  },
+  "Create Component Tests boiler-plate": {
+    "prefix": "test",
+    "body": [
+
+      "import React from 'react';",
+      "import { render } from '@testing-library/react';",
+      "",
+      "import { ${1:Component} } from './Button';",
+      "",
+      "describe('Button', () => {",
+      "\ttest('renders the ${1:Component} component', () => {",
+      "\t\trender(<${1:Component} />);",
+      "\t});",
+      "});"
+    ],
+    "description": "Creates the boiler-plate for a component test suite."
+  }​​​​​​​
+ }​​​​​​​​
